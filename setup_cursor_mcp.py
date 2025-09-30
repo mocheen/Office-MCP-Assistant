@@ -121,17 +121,13 @@ def install_dependencies():
         return True
     print("安装依赖: pip install -r requirements.txt")
     try:
-        # 使用与当前 Python 一致的解释器来安装依赖
+        # 使用与当前 Python 一致的解释器来安装依赖，直接显示输出到终端
         result = subprocess.run(
             [os.sys.executable, '-m', 'pip', 'install', '-r', str(req_file)],
-            check=False,
-            capture_output=True,
-            text=True
+            check=False
         )
         if result.returncode != 0:
             print("❌ 依赖安装失败")
-            print(result.stdout)
-            print(result.stderr)
             return False
         print("✓ 依赖安装完成")
         return True
