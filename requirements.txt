@@ -9,6 +9,14 @@ msoffcrypto-tool>=5.4.2
 docx2pdf>=0.1.8
 typer>=0.16.0
 
+# Additional dependencies added during MCP setup
+pandas>=2.2.0
+numpy>=1.26.0
+python-dateutil>=2.9.0
+pytz>=2024.1
+tzdata>=2024.1
+fonttools>=4.50.0
+python-dotenv>=1.0.0
 
 
 
